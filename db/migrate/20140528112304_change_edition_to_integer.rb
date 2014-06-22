@@ -1,9 +1,9 @@
 class ChangeEditionToInteger < ActiveRecord::Migration
   def up
-  	change_column :books, :edition, :integer
+  	execute 'ALTER TABLE books ALTER COLUMN edition TYPE integer USING (edition::integer)'
   end
 
   def down
-  	change_column :books, :edition, :string
+  	execute 'ALTER TABLE books ALTER COLUMN edition TYPE integer USING (edition::text)'
   end
 end
