@@ -1,6 +1,6 @@
 class ConvertAuthidIntToDoubleInUsers < ActiveRecord::Migration
   def up
-  	change_column :users, :authid, :double
+  	change_column :users, :authid, :float
   end
 
   def down
