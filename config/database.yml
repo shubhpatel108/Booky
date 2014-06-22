@@ -7,9 +7,10 @@ development:
   adapter: mysql
   database: tcs_dev.mysql
   username: 'root'
-  password: 'root'
+  password: ''
   pool: 5
   timeout: 5000
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -18,12 +19,17 @@ test:
   adapter: mysql
   database: tcs_test.mysql
   username: 'root'
-  password: 'root'
+  password: ''
   pool: 5
   timeout: 5000
+  port: 5432
 
 production:
-  adapter: sqlite3
-  database: tcs_pro.sqlite3
+  adapter: postgresql
+  database: d6frgcnnmu71k
   pool: 5
   timeout: 5000
+  username: yfaeuhvpmfqyur
+  password: Zpwz36I6_DuqmBKcidWHxt3qb3
+  host: ec2-54-197-241-96.compute-1.amazonaws.com:5432
+  port: 5432
