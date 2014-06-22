@@ -1,0 +1,1 @@
+document.location.search.match(/type=embed/gi)&&window.parent.postMessage("resize","*"),__bindToLinks(),$(".inline-popups").magnificPopup({delegate:"a",removalDelay:500,callbacks:{beforeOpen:function(){this.st.mainClass=this.st.el.attr("data-effect")}},midClick:!0});

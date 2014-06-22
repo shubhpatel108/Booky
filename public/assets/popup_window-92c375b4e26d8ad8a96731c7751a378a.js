@@ -1,0 +1,1 @@
+function __linkClick(){parent.window.postMessage(this.href,"*")}function __bindToLinks(){for(var n=document.querySelectorAll("a"),t=0,i=n.length;i>t;t++)"_blank"==n[t].getAttribute("data-t")&&n[t].addEventListener("click",__linkClick,!1)}window.open=function(){},window.print=function(){};
