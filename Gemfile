@@ -35,7 +35,7 @@ end
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 
-group :production do
+group :production, :staging do
   gem 'rails_12factor'
 end
 # To use ActiveModel has_secure_password
